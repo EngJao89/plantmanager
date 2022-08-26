@@ -1,5 +1,5 @@
 import React from 'react';
-import  { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
@@ -10,7 +10,7 @@ import { MyPlants } from '../pages/MyPlants';
 import colors from '../styles/colors';
 import AuthRoutes from './tab.routes';
 
-const stackRoutes = createStackNavigator();
+const stackRoutes = createNativeStackNavigator();
 
 const AppRoutes: React.FC = () => (
   <stackRoutes.Navigator
